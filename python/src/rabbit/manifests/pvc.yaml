@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rabbitmq-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce  # Fixed indentation (2 spaces)
+  resources:
+    requests:
+      storage: 1Gi   # "Gi" (uppercase) for Gibibytes
+  storageClassName: standard
